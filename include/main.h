@@ -5,5 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../include/init.h"
+#include "../include/map.h"
 
 #endif

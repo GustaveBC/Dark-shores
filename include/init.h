@@ -8,6 +8,6 @@
 #define SCREEN_WIDTH 800
 
 void initialize();
-void testComponent(void *component,char *operation, FILE *logs);
+void testComponent(void *component,char *operation, char *fileName);
 
 #endif
