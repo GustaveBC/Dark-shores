@@ -2,7 +2,6 @@
 #define INIT_h
 
 #include <stdio.h>
-#include <time.h>
 #include"../include/SDL2/SDL.h"
 #include "../include/SDL2/SDL_image.h"
 #define SCREEN_HEIGHT 600
