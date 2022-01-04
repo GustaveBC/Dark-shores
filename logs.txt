@@ -1,4 +1,0 @@
-[init.c] window creation successful
-[init.c] renderer creation successful
-[init.c] image creation successful
-[init.c] texture creation successful
