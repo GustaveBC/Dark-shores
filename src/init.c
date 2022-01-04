@@ -16,16 +16,16 @@ void initialize(){
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, render_flags);
     testComponent(renderer,"renderer creation",logs);
 
-    SDL_Surface *pickaxeImage = IMG_Load("res/r.png");
-    testComponent(pickaxeImage,"image creation",logs);
+    SDL_Surface *tempImage = IMG_Load("res/temporary.png");
+    testComponent(tempImage,"image creation",logs);
 
-    SDL_Texture *pickaxeTexture = SDL_CreateTextureFromSurface(renderer,pickaxeImage);
-    testComponent(pickaxeTexture,"texture creation",logs);
+    SDL_Texture *tempTexture = SDL_CreateTextureFromSurface(renderer,tempImage);
+    testComponent(tempTexture,"texture creation",logs);
 
     SDL_RenderClear(renderer);
     
     // draw the image to the window
-    SDL_RenderCopy(renderer, pickaxeTexture, NULL, NULL);
+    SDL_RenderCopy(renderer, tempTexture, NULL, NULL);
     SDL_RenderPresent(renderer);
 
 }
