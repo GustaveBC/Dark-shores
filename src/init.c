@@ -14,7 +14,7 @@ void initialize(){
     FILE *logs = fopen("logs.txt","a");
 
     if(SDL_Init(SDL_INIT_EVERYTHING) != 0){
-        fprintf(logs,"[init.c]ERR on window creation:%s\n",SDL_GetError());
+        fprintf(logs,"[init.c]ERR on SDL_Init:%s\n",SDL_GetError());
     }
 
     SDL_Window *window = SDL_CreateWindow("game v0",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH,SCREEN_HEIGHT,SDL_WINDOW_SHOWN);
@@ -24,9 +24,8 @@ void initialize(){
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, render_flags);
     testComponent(renderer,"renderer creation", "[init.c]");
 
-    SDL_Surface *tempImage = IMG_Load("res/temporary.png");
-    testComponent(tempImage,"image creation", "[init.c]");
-
+    SDL_Surface *tempImage = IMG_Load("res/temp.png");
+    testComponent(tempImage,"surface     creation", "[init.c]");
     SDL_Texture *tempTexture = SDL_CreateTextureFromSurface(renderer,tempImage);
     testComponent(tempTexture,"texture creation", "[init.c]");
 

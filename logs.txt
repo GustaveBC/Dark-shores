@@ -1,0 +1,2 @@
+[init.c]SUCCESS on window creation 
+[init.c]SUCCESS on renderer creation 
