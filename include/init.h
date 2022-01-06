@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include"../include/SDL2/SDL.h"
 #include "../include/SDL2/SDL_image.h"
+#include "../include/mapAndTiles.h"
 #define SCREEN_HEIGHT 600
 #define SCREEN_WIDTH 800
 
